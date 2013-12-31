@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "我要薅羊毛",
+    "description": "Get good profite on Internet",
+    "version": "1.0",
+
+    "permissions": [
+        "https://secure.flickr.com/",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup2.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://wiki.babel.baidu.com/*/WebTopicCreator*"],
+            "js": ["content.js"]
+        },
+        {
+            "matches": ["http://www.baidu.com/"],
+            "js": ["removeAd.js"]
+        }
+    ]
+}
