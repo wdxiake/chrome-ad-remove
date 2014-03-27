@@ -23,7 +23,11 @@
             "js": ["content.js"]
         },
         {
-            "matches": ["http://www.baidu.com/"],
+            "matches": ["http://www3.pidown.info/*"],
+            "js": ["removeAd.js"]
+        },
+        {
+            "matches": ["http://www3.wkdown.info/*"],
             "js": ["removeAd.js"]
         }
     ]

@@ -1,15 +1,6 @@
-var a = 0;
-function remove(){
-    setTimeout(function(){
-        var ad = document.getElementById('s_skin_guide_traveloutside');
-        if(ad != null){
-            ad.remove();
-            a=10;
-        }
-    }, 100);
-    if(a< 10){
-        a++;
-        remove();
-    }
+
+var ad = document.getElementById('down_btn');
+console.log(ad);
+if(ad !=  null   || ad!== undefined){
+    ad.removeAttribute('onclick');
 }
-remove();
